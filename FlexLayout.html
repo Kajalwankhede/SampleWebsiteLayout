@@ -1,0 +1,99 @@
+<!doctype html>
+<html lan="'en">
+<head>
+<meta charset="UTF-8">
+<title>FlexBox Demo</title>
+<style>
+body{
+    padding: 2em;
+}
+
+.headerContainer{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    background: tomato;
+    font-weight: bold;
+    padding: 10px;
+}
+.footerContainer{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    background: lightgreen;
+    font-weight: bold;
+    padding: 10px;
+
+}
+.mainContainer{
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mainContentItem{
+text-align: left;
+background: deepskyblue;
+}
+
+article{
+    padding: 10px;
+    margin: 10px;
+    background: aqua;
+}
+
+.sideBarLeftItem{
+    background: gold;
+}
+
+.sideBarRightItem{
+    background: hotpink;
+}
+
+.sidebarItem{
+    flex: 1 0 0;
+    border: 0px solid green;
+    
+}
+.mainContentItem{
+    flex: 3 0px;
+}
+
+.sideBarLeftItem{
+    order: 1;
+}
+.mainContentItem{
+    order: 2;
+}
+.sideBarRightItem{
+    order: 3;
+}
+
+</style>
+</head>
+<body>
+<header class="headerContainer"> Sample FlexBox Example </header>
+<div class= "mainContainer">
+    <section class= "mainContentItem">
+    <article>
+        <h2> First Article</h2>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+    </article>
+    <article>
+        <h2> Second Article</h2>
+        <p>Vestibulum tortor quam, feugiat vitae, Pellent fames . Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metu s</p>
+    </article>
+    <article>
+        <h2> Third Article</h2>
+        <p>Pellentesque  Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis/p>
+    </article>
+</section>
+<sidebar class= "sidebarItem sideBarLeftItem"><div class="center"><p>Left Side Bar</p> </div></sidebar>
+<sidebar class= "sidebarItem sideBarRightItem"><div class="center"><p>Right Side Bar</p> </div></sidebar>
+</div>
+
+<footer class= "footerContainer"></footer>
+<script type="text/javascript"> </script>
+</body>
+</html>
